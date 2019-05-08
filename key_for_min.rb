@@ -3,6 +3,7 @@
 
 require 'pry'
 def key_for_min_value(name_hash)
+<<<<<<< HEAD
   if name_hash == {}
     nil
   else
@@ -27,4 +28,17 @@ def key_for_min_value(name_hash)
     items[index].to_sym
   end
 
+=======
+  items = [] 
+  amounts = []
+  
+  name_hash.collect do |item, amount|
+    items << item
+    amounts << amounts
+  end
+  
+  least_amount = amounts.first
+  binding.pry
+  
+>>>>>>> 650b1d93f0f1d5c675d3714e08e20b9c96ad2dfb
 end
